@@ -29,7 +29,8 @@ function Home() {
             </Link>
             <a
               className="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-slate-700 active:bg-slate-600 uppercase text-sm shadow hover:shadow-lg"
-              href=""
+              href="https://github.com/Oldault/nextjs-13-Todo-list"
+              target="_blank"
             >Github Star</a>
           </div>
         </div>

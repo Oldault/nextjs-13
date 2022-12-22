@@ -12,12 +12,16 @@ async function TodosList() {
   const todos = await fetchTodos();
 
   return (
-    <div className="px-20">
-      {todos.map((todo) => (
-        <p key={todo.id} className="p-2  bg-blue-400 border-2 m-2 shadow-sm" >
-          <Link href={`/todos/${todo.id}`}>Todo: {todo.id}</Link>
-        </p>
-      ))}
+    <div className="my-16 px-4 sm:px-8 max-w-3xl m-auto">
+      <div className="border border-gray-200 rounded overflow-hidden shadow-md">
+        {todos.map((todo) => (
+          <Link href={`/todos/${todo.id}`} className="border-b">
+          <p key={todo.id} className="px-4 py-2 bg-white hover:bg-pink-200 hover:text-sky-900 border-b last:border-none border-gray-200 transition-all duration-300 ease-in-out" >
+            Todo: {todo.id}
+          </p>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }
